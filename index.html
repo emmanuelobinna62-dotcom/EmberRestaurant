@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+ <header>
+  <nav class=" fixed inset-0 z-10 flex items-center justify-between mx-auto px-8 h-20 bg-[#281C15]" >
+
+    <a href="#"><h1 class="font-serif font-semibold text-2xl tracking-wide text-[#FFF6E5] md:relative absolute left-0 pl-3">The Ember Table</h1></a>
+
+    <div class="mobile-menu hidden md:flex gap-4 md:justify-between">
+
+      
+        <!-- <ul class="links md:relative absolute top-16 bg-[#281C15] w-full items-start md:top-0 left-0 md:bg-none flex flex-col md:flex md:flex-row md:items-center justify-center gap-10 "> -->
+        <ul class="links md:relative absolute flex md:flex-row md:items-center items-start  gap-6 flex-col md:top-0 top-20 left-0 right-0 bg-[#281C15] md:p-0 pl-3 pb-10 md:mr-8 pt-10  ">
+          <a href="#home" class="menu-link text-[#FFF6E5]/70 hover:text-[#FFF6E5]"><li>HOME</li></a>
+          <a href="#menu" class="menu-link text-[#FFF6E5]/70 hover:text-[#FFF6E5]"><li>MENU</li></a>
+          <a href="#About-us" class="menu-link text-[#FFF6E5]/70 hover:text-[#FFF6E5]"><li>ABOUT</li></a>
+          <a href="#contact" class="menu-link text-[#FFF6E5]/70 hover:text-[#FFF6E5] :text-[#B8572E]"><li>CONTACT US</li></a>
+        </ul>
+
+      
+      <div class="phone hidden md:flex items-center justify-center space-x-2 text-[#FFF6E5]/80 hover:text-[#FFF6E5] ml-16">
+        <i class="fa-solid fa-phone"></i>
+        <a href="#" class=""><p>(555) 123-4567</p></a>
+
+      
+
+        <button class="text-white bg-[#B8572E] px-4 py-3 rounded-lg font-medium ml-4 cursor-pointer min-w-fit">Reserve a Table</button> 
+
+      </div>
+
+
+    </div>
+    <div class=" md:hidden">
+        <i class="hamburger fa fa-bars text-2xl text-white  mt-10" aria-hidden="true"></i>
+
+    </div>
+
+    </div>
+
+
+  </nav>
+ </header>
+ <main>
+  <div id="home" class="section-1 bg-hero min-h-screen flex items-center flex-col gap-y-8 justify-center">
+    <h4 class="uppercase text-[#D2802D] font-medium tracking-widest pt-14">Modern American Cuisine</h4>
+    <h1 class="font-serif  text-5xl md:text-8xl text-[#F8F6F1]">The Ember Table</h1>
+    <p class="max-w-150 text-center leading-8 text-[#FFF6E5]/80 text-base md:text-lg">Where passion meets plate. Experience culinary artistry crafted
+       with locally-sourced ingredients in an intimate setting.</p>
+    <div class="md:flex md:flex-row flex flex-col md:space-x-5 space-x-0 px-4 md:min-w-fit min-w-full md:space-y-0 space-y-4 ">
+      <button class="md:px-8  md:py-4 py-4 bg-[#B8572E] font-medium text-[#F8F6F1] rounded-lg hover:bg-[#B8572E]/80 transition-transform duration-200  hover:-translate-y-1 cursor-pointer">Reserve Your Table</button>
+      <button class="md:px-8 md:py-3.5 px-14 py-4 font-medium text-[#F8F6F1]  border-2 rounded-lg border-[#F8F6F1] hover:bg-white/10 transition-transform duration-200  hover:-translate-y-1 cursor-pointer ">View Menu</button>
+    </div>
+  </div>
+
+  <div id="About-us" class="section-2 md:min-h-screen min-h-[150vh] md:flex md:flex-row flex flex-col items-center md:mx-12 ml-4 mr-6 gap-x-16 md:pb-0 pb-10">
+    <div> <img src="restaurant-interior-Bx-MZ1so.jpg" class="rounded-xl md:mt-0 mt-16 md:max-w-150 min-w-auto md:min-h-110 min-h-auto md:hover:scale-105 transition-transform duration-700" alt="interior-image"> </div>
+    <div class="flex flex-col  md:gap-4 gap-6 items-start md:mt-0 mt-10 md:mb-0 mb-14">
+      <h5 class="uppercase tracking-[0.2em] text-sm font-sans text-[#B8572E] font-medium">About Us</h5>
+      <h2 class="font-serif md:text-5xl text-4xl font-medium leading-tight">A Passion for <br> <span class="text-[#B8572E]">Exceptional Dining</span></h2>
+      <hr class="w-18 border-2 text-[#B8572E]">
+      <p class="leading-relaxed text-[14px] text-black/70">Nestled in the heart of downtown, The Ember Table has been a beloved culinary destination since 2015. Our philosophy is simple:
+         source the finest local ingredients and transform them into unforgettable dishes that honor tradition while embracing innovation.
+      </p>
+      <p class="leading-relaxed text-[15px] text-black/70">Chef Marcus Chen brings over two decades of experience from renowned kitchens across the country. His
+         commitment to seasonal menus and sustainable practices ensures every visit offers something new to discover.
+      </p>
+      <button class="md:px-6 md:py-4 px-7 py-3 bg-[#B8572E] rounded-lg md:font-medium  font-normal text-white"> Learn Our Story</button>
+    </div>
+  </div>
+
+  <div id="menu" class="section-3 md:min-h-[160vh] min-h-[200vh] flex items-center flex-col gap-4 pt-24 bg-[#F3F0E9] mb-20 md-pb-0 pb-10">
+      <h5 class="uppercase tracking-[0.2em] text-sm font-sans text-[#B8572E] font-medium">Our Menu</h5>
+      <h2 class="font-serif md:text-5xl text-4xl font-medium leading-tight mb-12">Signature Dishes</h2>
+      
+    <div class="grid md:grid-cols-3 gap-7 mt-7 md:mx-11">
+
+      <div class=" md:max-w-100  max-w-110 space-y-4 shadow-2xl rounded-lg pb-4 hover:scale-103 transition-transform duration-700">
+        <img src="dish-pasta-Dy-BmXbE.jpg " class=" rounded-t-lg "alt="pasta">
+        <h3 class="pl-4">Handmade Bucatini</h3>
+        <p class="pl-4 text-sm">Fresh pasta with house-made San Marzano sauce, pecorino, and crispy guanciale</p>
+      </div>
+      <div class=" md:max-100 max-w-110 space-y-4 shadow-2xl rounded-lg pb-4 hover:scale-103 transition-transform duration-700">
+        <img src="dish-steak-Bv61ZlIT.jpg" class="rounded-t-lg" alt="dish-steak">
+        <h3 class="pl-4">Prime Ribeye</h3>
+        <p class="pl-4 text-sm">14oz dry-aged ribeye with bone marrow butter, roasted vegetables, and red wine jus</p>
+      </div>
+      <div class=" md:max-w-100 max-w-110 space-y-4 shadow-2xl rounded-lg pb-4 hover:scale-103 transition-transform duration-700">
+        <img src="dish-salmon-Dfm6-snk.jpg" class="rounded-t-lg" alt=" dish-salmon">
+        <h3 class="pl-4">Pan-Seared Salmon</h3>
+        <p class="pl-4 text-sm">Wild-caught salmon with lemon beurre blanc, grilled asparagus, and fingerling potatoes</p>
+      </div>
+
+    
+    </div>
+
+    <button class="bg-[#B8572E] px-8 py-3 mt-8 md:mb-0 mb-8 font-semibold text-white rounded-lg ">Explore Full Menu</button>
+    
+  </div>
+
+  <div id="contact" class=" section-4 md:flex md:flex-row flex flex-col gap-12 min-h-[110vh] md:items-start mx-12 pt-16 pb-14">
+    <div class="flex-1"><iframe class=" w-full grayscale hover:grayscale-0 transition duration-300 rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5818460093997!2d-73.98397202397241!3d40.7492257713881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590738778edf%3A0x3ba82e23876af8d!2sThe%20Morgan%20Library%20%26%20Museum!5e0!3m2!1sen!2sng!4v1765733173215!5m2!1sen!2sng"width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="flex flex-col gap-6 flex-1">
+      <h5 class="uppercase tracking-[0.2em] text-sm font-sans text-[#B8572E] font-medium pt-1">Contact Us</h5>
+      <h2 class="font-serif md:text-5xl text-3xl  font-medium leading-tight">Find Your Way</h2>
+      <div class="flex items-start gap-6 bg-[#F1ECE4] ml-1 rounded-lg p-3">
+        <div class="rounded-full bg-[#EADDD2] w-12 h-12 flex items-center justify-center"><i class="fa fa-map-marker text-xl text text-[#B8572E]" aria-hidden="true"></i></div>
+        <div class="flex flex-col gap-1">
+          <h3 class="font-semibold ">Address</h3>
+          <p class="leading-relaxed text-[14px] text-black/70 max-w-60">123 Main Street, Downtown District New York, NY 10001</p>
+        </div>
+      </div>
+      <div class="flex flex-1 items-start gap-6 bg-[#F1ECE4] ml-1 rounded-lg p-3">
+        <div class="rounded-full bg-[#EADDD2] w-12 h-12 flex items-center justify-center"><i class="fa fa-map-marker text-xl text text-[#B8572E]" aria-hidden="true"></i></div>
+        <div class="flex flex-col gap-1 ">
+          <h3 class="font-semibold ">Hours</h3>
+          <p class="leading-relaxed text-[14px] text-black/70 max-w-60">Mon - Thu: 5:00 PM - 10:00 PM</p>
+          <p class="leading-relaxed text-[14px] text-black/70 max-w-60">Fri - Sun: 5:00 PM - 11:00 PM</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-6 bg-[#F1ECE4] ml-1 rounded-lg p-3">
+        <div class="rounded-full bg-[#EADDD2] w-12 h-12 flex items-center justify-center"><i class="fa fa-map-marker text-xl text text-[#B8572E]" aria-hidden="true"></i></div>
+        <div class="flex flex-col gap-1">
+          <h3 class="font-semibol ">Reservations</h3>
+          <p>(555) 123-4567</p>
+          <p class="leading-relaxed text-[14px] text-black/70 max-w-60">Or book online below</p>
+        </div>
+      </div>
+      <div>
+        <button class="text-white bg-[#B8572E] px-4 py-3 rounded-lg font-medium ">Make a Reservation</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="section-5 bg-plus-pattern min-h-[80vh] flex  items-center flex-col gap-6 pt-20">
+     
+    <h5 class="uppercase tracking-[0.2em] text-sm font-sans text-[#B8572E] font-medium pt-1">Join Us</h5>
+    <h2 class="font-serif md:text-6xl text-4xl font-medium leading-tight mb-4 text-[#F8F6F1]">Reserve Your Experience</h2>
+    <p class="max-w-2xl md:mx-0 mx-4  text-center leading-8 text-[#FFF6E5]/80 text-base">
+      Whether it's a romantic dinner for two or a celebration with friends, we're here to make your evening unforgettable.
+    </p>
+    <div class="flex md:flex-row flex-col space-x-5 md:min-w-0 min-w-full md:space-y-0 space-y-4">
+      <button class="px-10 py-4 md:mx-2  mx-6   bg-[#B8572E] font-medium text-[#F8F6F1] rounded-lg hover:bg-[#B8572E]/80 transition-transform duration-200  hover:-translate-y-1 cursor-pointer">Book Now</button>
+      <button class="px-10 py-3.5 md:mx-2 mx-6 font-medium text-[#F8F6F1]  border-2 rounded-lg border-[#F8F6F1] hover:bg-white/10 transition-transform duration-200  hover:-translate-y-1 cursor-pointer ">Call Us</button>
+    </div>
+    
+
+  </div>
+
+ </main>
+
+ <footer class="bg-[#281C15] md:min-h-[70vh] min-h-[160vh] flex flex-col md:px-12 px-6 pt-14">
+  <div class="md:flex md:flex-row flex flex-col gap-4">
+
+
+    <div class="footer-logo flex-1 flex flex-col gap-5 ">
+      <h1 class="font-serif font-semibold text-2xl tracking-wide text-[#FFF6E5]">The Ember Table</h1>
+      <p class="text-sm leading-relaxed text-[#FFF6E5]/70 mr-6">
+        A neighborhood gem serving modern American cuisine crafted with 
+        locally-sourced ingredients and heartfelt passion.
+      </p>
+      <div class="socials text-xl flex gap-4 text-[#FFF6E5]/70 pb-4">
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="hours flex-1">
+      <div class="mb-6">
+        <h3 class="text-[#F8F6F1] text-xl">Hours</h3>
+      </div>
+      <div class="flex flex-col md:text-sm gap-2 space-y-2 text-xs pb-4">
+        <p class="text-[#FFF6E5]/70">Monday - Thursday</p>
+        <p class="text-[#FFF6E5]">5:00 PM - 10:00 PM</p>
+        <p class="text-[#FFF6E5]/70">Friday - Sunday</p>
+        <p class="text-[#FFF6E5]">5:00 PM - 11:00 PM</p>
+
+
+      </div>
+
+    </div>
+
+    <div class="contact flex-1">
+      <div class="mb-6 mt-8 md:mt-0">
+        <h3 class="text-[#F8F6F1] text-xl">Contact</h3>
+      </div>
+
+      <div class="flex flex-col gap-4">
+
+        <div class="flex items-center md:text-sm text-xs space-x-3">
+          <i class="fa-solid fa-phone text-[#B8572E] "></i>
+          <p class="text-[#FFF6E5]/70">
+            (555) 123-4567
+          </p>
+        </div>
+        <div class="flex items-start space-x-3 space-y-4 md:text-sm text-xs">
+          <i class="fa fa-envelope text-[#B8572E]" aria-hidden="true"></i>
+          <p class="text-[#FFF6E5]/70">
+            hello@theembertable.com
+          </p>
+
+        </div>
+        <div class="flex items-start space-x-3 md:text-sm text-xs">
+          <i class="fa fa-map-marker text-[#B8572E]" aria-hidden="true"></i>
+          <p class="max-w-40 text-[#FFF6E5]/70">
+            123 Main Street Downtown District New York, NY 10001
+          </p>
+
+        </div>
+        
+      </div>
+
+
+    </div>
+
+    <div class="quick-links flex-1">
+      <div class="mb-6 mt-8 md:mt-0">
+        <h3 class="text-[#F8F6F1] text-xl">Quick Links</h3>
+      </div>
+      <div class=" md:text-sm  text-xs flex flex-col gap-2 text-[#FFF6E5]/70">
+        <p>Our Menu</p>
+        <p>About Us</p>
+        <p>Reservations</p>
+        <p>Private Events</p>
+        <p>Gift Cards</p>
+      </div>
+    
+    </div>
+
+  </div>
+  
+  
+  <hr class= "font-thin text-[#FFF6E5]/70 mt-10">
+  <div class="md:flex md:flex-row flex flex-col justify-between mt-10 items-center space-y-4 text-[#FFF6E5]/70">
+    <div>
+      <p class="md:text-sm text-xs">&copy; 2025 The Ember Table. All rights reserved.</p>
+    </div>
+    <div class="flex gap-4 md:text-sm text-xs">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+ </footer>
+
+
+  <script src="src/main.js"></script>
+</body>
+</html>
