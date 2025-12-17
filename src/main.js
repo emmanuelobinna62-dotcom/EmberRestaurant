@@ -1,16 +1,5 @@
 
-// const menu = document.querySelector('.mobile-menu');
-// const hamburger = document.querySelector('.hamburger');
-// const close = document.querySelector('fa fa-times')
-
-// function toggleMenu(){
-//   menu.classList.toggle('hidden'),
-//   hamburger.remove
-// }
-
-
-
-// hamburger.addEventListener('click',toggleMenu)
+import './style.css'
 
 
 const hamburger = document.querySelector('.hamburger');

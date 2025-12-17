@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/style.css" rel="stylesheet">
+  <!-- <link href="./src/style.css" rel="stylesheet"> -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 <body>
@@ -81,17 +81,17 @@
     <div class="grid md:grid-cols-3 gap-7 mt-7 md:mx-11">
 
       <div class=" md:max-w-100  max-w-110 space-y-4 shadow-2xl rounded-lg pb-4 hover:scale-103 transition-transform duration-700">
-        <img src="dish-pasta-Dy-BmXbE.jpg " class=" rounded-t-lg "alt="pasta">
+        <img src="/public/dish-pasta-Dy-BmXbE.jpg " class=" rounded-t-lg" alt="pasta">
         <h3 class="pl-4">Handmade Bucatini</h3>
         <p class="pl-4 text-sm">Fresh pasta with house-made San Marzano sauce, pecorino, and crispy guanciale</p>
       </div>
       <div class=" md:max-100 max-w-110 space-y-4 shadow-2xl rounded-lg pb-4 hover:scale-103 transition-transform duration-700">
-        <img src="dish-steak-Bv61ZlIT.jpg" class="rounded-t-lg" alt="dish-steak">
+        <img src="/public/dish-steak-Bv61ZlIT.jpg" class="rounded-t-lg" alt="dish-steak">
         <h3 class="pl-4">Prime Ribeye</h3>
         <p class="pl-4 text-sm">14oz dry-aged ribeye with bone marrow butter, roasted vegetables, and red wine jus</p>
       </div>
       <div class=" md:max-w-100 max-w-110 space-y-4 shadow-2xl rounded-lg pb-4 hover:scale-103 transition-transform duration-700">
-        <img src="dish-salmon-Dfm6-snk.jpg" class="rounded-t-lg" alt=" dish-salmon">
+        <img src="/public/dish-salmon-Dfm6-snk.jpg" class="rounded-t-lg" alt=" dish-salmon">
         <h3 class="pl-4">Pan-Seared Salmon</h3>
         <p class="pl-4 text-sm">Wild-caught salmon with lemon beurre blanc, grilled asparagus, and fingerling potatoes</p>
       </div>
@@ -104,7 +104,16 @@
   </div>
 
   <div id="contact" class=" section-4 md:flex md:flex-row flex flex-col gap-12 min-h-[110vh] md:items-start mx-12 pt-16 pb-14">
-    <div class="flex-1"><iframe class=" w-full grayscale hover:grayscale-0 transition duration-300 rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5818460093997!2d-73.98397202397241!3d40.7492257713881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590738778edf%3A0x3ba82e23876af8d!2sThe%20Morgan%20Library%20%26%20Museum!5e0!3m2!1sen!2sng!4v1765733173215!5m2!1sen!2sng"width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="flex-1">
+      <iframe class=" w-full grayscale hover:grayscale-0 transition duration-300 rounded-lg" 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.5818460093997!2d-73.98397202397241!3d40.7492257713881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590738778edf%3A0x3ba82e23876af8d!2sThe%20Morgan%20Library%20%26%20Museum!5e0!3m2!1sen!2sng!4v1765733173215!5m2!1sen!2sng"
+      width="600" 
+      height="550"
+       style="border:0;"
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe></div>
     <div class="flex flex-col gap-6 flex-1">
       <h5 class="uppercase tracking-[0.2em] text-sm font-sans text-[#B8572E] font-medium pt-1">Contact Us</h5>
       <h2 class="font-serif md:text-5xl text-3xl  font-medium leading-tight">Find Your Way</h2>
@@ -248,6 +257,6 @@
  </footer>
 
 
-  <script src="src/main.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
