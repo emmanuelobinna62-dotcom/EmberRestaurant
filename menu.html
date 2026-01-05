@@ -1,0 +1,609 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/style.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class=" fixed inset-0 z-10 flex items-center justify-between mx-auto px-8 h-20 bg-[#281C15]" >
+
+            <a href="#"><h1 class="font-serif font-semibold text-2xl tracking-wide text-[#FFF6E5] md:relative absolute left-0 pl-3">The Ember Table</h1></a>
+
+            <div class="mobile-menu hidden md:flex gap-4 md:justify-between">
+
+            
+                <!-- <ul class="links md:relative absolute top-16 bg-[#281C15] w-full items-start md:top-0 left-0 md:bg-none flex flex-col md:flex md:flex-row md:items-center justify-center gap-10 "> -->
+                <ul class="links md:relative absolute flex md:flex-row md:items-center items-start  gap-6 flex-col md:top-0 top-20 left-0 right-0 bg-[#281C15] md:p-0 pl-3 pb-10 md:mr-8 pt-10">
+                <a href="index.html" class="menu-link text-[#FFF6E5]/70 hover:text-[#FFF6E5]"><li>HOME</li></a>
+                <a href="index.html#menu" class="menu-link text-[#FFF6E5]/70 hover:text-[#FFF6E5]"><li>MENU</li></a>
+                <a href="index.html#About-us" class="menu-link text-[#FFF6E5]/70 hover:text-[#FFF6E5]"><li>ABOUT</li></a>
+                <a href="index.html#contact" class="menu-link text-[#FFF6E5]/70 hover:text-[#FFF6E5] :text-[#B8572E]"><li>CONTACT US</li></a>
+                </ul>
+
+            
+            <div class="phone hidden md:flex items-center justify-center space-x-2 text-[#FFF6E5]/80 hover:text-[#FFF6E5] ml-16">
+                <i class="fa-solid fa-phone"></i>
+                <a href="#" class=""><p>(555) 123-4567</p></a>
+
+            
+
+                <button class="text-white bg-[#B8572E] px-4 py-3 rounded-lg font-medium ml-4 cursor-pointer min-w-fit">Reserve a Table</button> 
+
+            </div>
+
+
+            </div>
+            <div class=" md:hidden">
+                <i class="hamburger fa fa-bars text-2xl text-white  mt-10" aria-hidden="true"></i>
+
+            </div>
+
+            <!-- </div> -->
+
+
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <div class=" MENU-heading flex flex-col items-center gap-4 bg-[#281D15]">
+            <h4 class="uppercase text-[#D2802D] font-medium tracking-widest pt-16">Culinary Excellence</h4>
+            <h1 class="font-serif  text-3xl md:text-6xl text-[#F8F6F1]">Our Menu</h1>
+            <p class="max-w-150 text-center leading-8 text-[#FFF6E5]/80 text-base md:text-base pb-6">
+                Seasonal ingredients, timeless techniques, unforgettable flavors
+            </p>
+            
+        </div>
+
+        <div class=" menu-container pt-24 flex flex-col space-y-10 mx-10">
+            
+            <div class="Rice-Dishes flex flex-col gap-4">
+                <h3 class="text-center text-3xl font-semibold pr-20">Rice Dishes</h3>
+                <div class="flex flex-col">
+                    <!-- <p>Number of Portions</p> -->
+                    <i class="fa-solid fa-arrow-down ml-12"></i>
+                </div>
+
+                <div class="jollof-Rice grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="Jollof Rice"
+                        data-price="2500"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium">Jollof Rice</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/dish-pasta-Dy-BmXbE.jpg"
+                            data-name="jollof Rice"
+                            data-price="₦2,500"
+                            onclick="openModal(this)">
+
+                            <img src="public/dish-pasta-Dy-BmXbE.jpg"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="jollof Rice">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦2,500</span>
+
+                </div>
+
+                <div class="Fried-rice grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="Fried Rice"
+                        data-price="3500"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium">Fried Rice</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/dish-steak-Bv61ZlIT.jpg"
+                            data-name="Fried Rice"
+                            data-price="₦3,500"
+                            onclick="openModal(this)">
+
+                            <img src="public/dish-steak-Bv61ZlIT.jpg"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="Fried Rice">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦3,500</span>
+
+                </div>
+
+
+                <div class="coconut-rice grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="Coconut Rice"
+                        data-price="3500"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium">Coco Rice</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/dish-salmon-Dfm6-snk.jpg"
+                            data-name="Fried Rice"
+                            data-price="₦3,500"
+                            onclick="openModal(this)">
+
+                            <img src="public/dish-salmon-Dfm6-snk.jpg"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="Fried Rice">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦3,500</span>
+
+                </div>
+
+
+
+                <div class="Ofada-rice grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="Ofada"
+                        data-price="3500"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium">Ofada Rice</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/ofada-rice.jpg"
+                            data-name="Ofada Rice"
+                            data-price="₦5,500"
+                            onclick="openModal(this)">
+
+                            <img src="public/ofada-rice.jpg"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="Ofada Rice">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦5,500</span>
+
+                </div>
+
+                <div class="Rice-stew grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="Rice and stew"
+                        data-price="5000"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium">Rice and stew</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/rice and stew (1).webp"
+                            data-name="Rice and stew"
+                            data-price="₦5,000"
+                            onclick="openModal(this)">
+
+                            <img src="public/rice and stew (1).webp"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="Rice and stew">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦5,000</span>
+
+                </div>
+
+                
+            </div>
+
+            <div class="Swallows flex flex-col gap-4 mt-10">
+                <h3 class="text-center text-3xl font-semibold pr-20 mb-10">Swallows</h3>
+
+                <div class="Pounded-yam  grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="pounded yam"
+                        data-price="500"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium max-w-2xl">pounded yam</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/pounded yam.jpg"
+                            data-name="Rice and stew"
+                            data-price="₦500"
+                            onclick="openModal(this)">
+
+                            <img src="public/pounded yam.jpg"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="pounded yam">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦500</span>
+
+                </div>
+
+                <div class="Semo grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="SemoVita"
+                        data-price="400"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium max-w-2xl">SemoVita</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/pounded yam.jpg"
+                            data-name="SemoVita"
+                            data-price="₦400"
+                            onclick="openModal(this)">
+
+                            <img src="public/pounded yam.jpg"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="SemoVita">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦400</span>
+
+                </div>
+
+                <div class="Garri grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="Garri"
+                        data-price="300"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium">Garri</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/garri.jpg"
+                            data-name="Garri"
+                            data-price="₦300"
+                            onclick="openModal(this)">
+
+                            <img src="public/garri.jpg"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="Garri">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦300</span>
+
+                </div>
+                
+                <div class="fufu grid grid-cols-4 justify-between gap-4 hover:bg-[#F3F0E9] p-3 rounded-md">
+
+                    <!-- Quantity controls -->
+                    <div class="flex items-center gap-2">
+                        <button class="qty-minus bg-gray-200 px-3 rounded text-lg">−</button>
+
+                        <span 
+                        class="qty text-lg font-medium"
+                        data-name="fufu"
+                        data-price="400"
+                        >0</span>
+
+                        <button class="qty-plus bg-gray-200 px-3 rounded text-lg">+</button>
+                    </div>
+                            <!-- food name -->
+                    <span class="text-lg font-medium">Fufu</span>
+
+                    <ul>
+
+                        <li class="menu-link cursor-pointer"
+                            data-image="public/fufu.jpg"
+                            data-name="fufu"
+                            data-price="₦400"
+                            onclick="openModal(this)">
+
+                            <img src="public/fufu.jpg"
+                            class="w-10 h-10 object-cover rounded-md inline-block mr-3"
+                            loading="lazy"
+                            alt="fufu">
+
+                        </li>
+
+                    </ul>
+
+                    <!-- Price -->
+                    <span class="font-medium">₦400</span>
+
+                </div>
+
+            </div>
+
+
+           
+
+                
+
+
+
+
+   
+
+
+
+
+
+             <!-- <div class="menu-item flex items-center gap-3">
+                <input type="checkbox" class="menu-checkbox" data-name="isikan Rice" data-price="5500">
+                <span>Isikan Rice – ₦5,500</span>
+            </div>
+             <div class="menu-item flex items-center gap-3">
+                <input type="checkbox" class="menu-checkbox" data-name="Jollof Rice" data-price="2500">
+                <span>Jollof Rice – ₦2,500</span>
+            </div>
+             <div class="menu-item flex items-center gap-3">
+                <input type="checkbox" class="menu-checkbox" data-name="Jollof Rice" data-price="2500">
+                <span>Jollof Rice – ₦2,500</span>
+            </div>
+             <div class="menu-item flex items-center gap-3">
+                <input type="checkbox" class="menu-checkbox" data-name="Jollof Rice" data-price="2500">
+                <span>Jollof Rice – ₦2,500</span>
+            </div>
+             <div class="menu-item flex items-center gap-3">
+                <input type="checkbox" class="menu-checkbox" data-name="Jollof Rice" data-price="2500">
+                <span>Jollof Rice – ₦2,500</span>
+            </div> -->
+
+            <div class="flex items-center justify-center md:justify-start mb-10">
+                <button
+                    id="submitOrder"
+                    disabled
+                    class="bg-green-600 text-white px-6 py-3 rounded opacity-50 cursor-not-allowed max-w-fit flex"
+                    >
+                    Submit My Order
+                </button>
+            </div>
+            
+        </div>
+
+        
+
+        
+    </main>
+    <footer class="bg-[#281C15] md:min-h-[70vh] min-h-[160vh] flex flex-col md:px-12 px-6 pt-14">
+    <div class="md:flex md:flex-row flex flex-col gap-4">
+
+
+        <div class="footer-logo flex-1 flex flex-col gap-5 ">
+        <h1 class="font-serif font-semibold text-2xl tracking-wide text-[#FFF6E5]">The Ember Table</h1>
+        <p class="text-sm leading-relaxed text-[#FFF6E5]/70 mr-6">
+            A neighborhood gem serving modern American cuisine crafted with 
+            locally-sourced ingredients and heartfelt passion.
+        </p>
+        <div class="socials text-xl flex gap-4 text-[#FFF6E5]/70 pb-4">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        </div>
+        <div class="hours flex-1">
+        <div class="mb-6">
+            <h3 class="text-[#F8F6F1] text-xl">Hours</h3>
+        </div>
+        <div class="flex flex-col md:text-sm gap-2 space-y-2 text-xs pb-4">
+            <p class="text-[#FFF6E5]/70">Monday - Thursday</p>
+            <p class="text-[#FFF6E5]">5:00 PM - 10:00 PM</p>
+            <p class="text-[#FFF6E5]/70">Friday - Sunday</p>
+            <p class="text-[#FFF6E5]">5:00 PM - 11:00 PM</p>
+
+
+        </div>
+
+        </div>
+
+        <div class="contact flex-1">
+        <div class="mb-6 mt-8 md:mt-0">
+            <h3 class="text-[#F8F6F1] text-xl">Contact</h3>
+        </div>
+
+        <div class="flex flex-col gap-4">
+
+            <div class="flex items-center md:text-sm text-xs space-x-3">
+            <i class="fa-solid fa-phone text-[#B8572E] "></i>
+            <p class="text-[#FFF6E5]/70">
+                (555) 123-4567
+            </p>
+            </div>
+            <div class="flex items-start space-x-3 space-y-4 md:text-sm text-xs">
+            <i class="fa fa-envelope text-[#B8572E]" aria-hidden="true"></i>
+            <p class="text-[#FFF6E5]/70">
+                hello@theembertable.com
+            </p>
+
+            </div>
+            <div class="flex items-start space-x-3 md:text-sm text-xs">
+            <i class="fa fa-map-marker text-[#B8572E]" aria-hidden="true"></i>
+            <p class="max-w-40 text-[#FFF6E5]/70">
+                123 Main Street Downtown District New York, NY 10001
+            </p>
+
+            </div>
+            
+        </div>
+
+
+        </div>
+
+        <div class="quick-links flex-1">
+        <div class="mb-6 mt-8 md:mt-0">
+            <h3 class="text-[#F8F6F1] text-xl">Quick Links</h3>
+        </div>
+        <div class=" md:text-sm  text-xs flex flex-col gap-2 text-[#FFF6E5]/70">
+            <p>Our Menu</p>
+            <p>About Us</p>
+            <p>Reservations</p>
+            <p>Private Events</p>
+            <p>Gift Cards</p>
+        </div>
+        
+        </div>
+
+    </div>
+    
+    
+    <hr class= "font-thin text-[#FFF6E5]/70 mt-10">
+    <div class="md:flex md:flex-row flex flex-col justify-between mt-10 items-center space-y-4 text-[#FFF6E5]/70">
+        <div>
+        <p class="md:text-sm text-xs">&copy; 2026 The Ember Table. All rights reserved.</p>
+        </div>
+        <div class="flex gap-4 md:text-sm text-xs">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        </div>
+    </div>
+    </footer>
+
+
+    <div id="imageModal"class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+
+        <div class="bg-white rounded-xl p-4 max-w-md w-full relative">
+            <button onclick="closeModal()"
+                    class="absolute top-2 right-3 text-4xl font-extrabold cursor-pointer text-red-600 ">✕</button>
+
+            <img id="modalImg"
+                class="w-full h-64 object-cover rounded-lg">
+
+            <h3 id="modalName"
+                class="mt-4 text-xl font-semibold"></h3>
+
+            <p id="modalPrice"
+            class="text-[#B8572E] font-bold mt-1"></p>
+        </div>
+    </div>
+
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
