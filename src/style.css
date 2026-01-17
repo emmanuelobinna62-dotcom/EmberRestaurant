@@ -5,13 +5,14 @@
 
 
 @layer utilities {
-  .bg-hero {
+  /* .bg-hero {
+    
     background-image: 
     linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),
     url('/hero-restaurant-gZD30BJF.jpg');
     background-position: center ;
     background-size: cover;
-  }
+  } */
 
 
 
